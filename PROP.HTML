@@ -150,6 +150,66 @@
                 padding: 25px;
             }
         }
+
+
+        /* Bonus drawer */
+.bonus-tab {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.bonus-toggle {
+    background-color: #b84c65;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 10px 10px ;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: background-color 0.2s ease;
+}
+
+.bonus-toggle:hover {
+    background-color: #963b52;
+}
+
+.bonus-toggle .arrow {
+    display: inline-block;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.bonus-toggle.open .arrow {
+    transform: rotate(180deg);
+}
+
+.bonus-drawer {
+    max-height: 0;
+    overflow: hidden;
+    background-color: rgb(247, 185, 161);
+    border-radius:  12px 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: max-height 0.5s ease, padding 0.5s ease;
+    text-align: left;
+}
+
+.bonus-drawer.open {
+    max-height: 100000px; /* big enough to fit content */
+    padding: 30px 40px;
+}
+
+.bonus-drawer h3 {
+    color: #b84c65;
+    margin-top: 0;
+}
+
+.bonus-drawer p {
+    font-size: 16px;
+    line-height: 1.7;
+}
     </style>
 
     <script>
@@ -166,6 +226,13 @@
             const selectedAudio = document.getElementById(id);
             selectedAudio.play();
         }
+
+        function toggleBonus() {
+    const drawer = document.getElementById("bonusDrawer");
+    const btn = document.querySelector(".bonus-toggle");
+    drawer.classList.toggle("open");
+    btn.classList.toggle("open");
+}
     </script>
 </head>
 
@@ -216,12 +283,12 @@
             <div class="gallery">
 
                 <div class="memory">
-                    <img src="images/FirstAlt.png" alt="One of our favorite memories">
+                    <img src="images/FirstAlt.png" >
                     <p>This was technically our first message on my main account!</p>
                 </div>
 
                 <div class="memory">
-                    <img src="images/FirstMain.png" alt="A special memory">
+                    <img src="images/FirstMain.png" >
                     <p>We basically only talk here so worth showing!</p>
                 </div>
 
@@ -353,6 +420,80 @@
 
         </section>
 
+        <section class="bonus-tab">
+            <button class="bonus-toggle" onclick="toggleBonus()">
+                Extra stuff! <span class="arrow">▼</span>
+            </button>
+
+            <div class="bonus-drawer" id="bonusDrawer">
+                <!-- <h3>Proptography</h3> -->
+        <section class="memories">
+
+            <h2>Proptography</h2>
+            I will get you a camera still. before getting you the shock collar.
+
+            <div class="gallery">
+
+                <div class="memory">
+                    <img src="images/20260619_221419.jpg" >
+                    <p>Prop at the beach. I despise beaches but the view is really pretty </p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/20260517_135043.jpg" >
+                    <p>You are at riga here IIRC. Its super cute how you always take picture when you go there</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/20260519_125718.jpg" >
+                    <p>Treeeeeeeeeeeeeeeeeeeee</p>
+                </div>
+
+                
+
+                <div class="memory">
+                    <img src="images/20260610_223818.jpg" >
+                    <p>this one if really beatiful</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/IMG_7272.jpg" >
+                    <p>the first time that the number 1 kokonoe in latvia showed up</p>
+                </div>
+
+
+                <div class="memory">
+                    <img src="images/20260620_065453.jpg" >
+                    <p>You used to send a lot more pics of you walking outside in the woods. Should send more!</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/mine3.png" >
+                    <p>Minecraft photography is still Proptography</p>
+                </div>
+                
+                <div class="memory">
+                    <img src="images/mine2.png" >
+                    <p>Froggies</p>
+                </div>
+
+                <!-- I tried looking for things on my old acc but I can find anything. its a shame. I wish we had it saved -->
+                <!-- <div class="memory">
+                    <img src="images/memory3.jpg">
+                    <p>A moment I'll always remember.</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/memory4.jpg">
+                    <p>I'm grateful we got to experience this together.</p>
+                </div> -->
+
+            </div>
+            <p>I tried looking for things on my old acc but I can find anything. its a shame. I wish we had it saved</p>
+
+        </section>
+            </div>
+        </section>
     </div>
 
 </body>
