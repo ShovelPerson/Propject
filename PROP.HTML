@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Page made by a stupid bimbo for an incredible friend</title>
+
+    <style>
+        .audio-buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .audio-buttons button {
+            background-color: #b84c65;
+            color: white;
+            border: none;
+            padding: 12px 22px;
+            margin: 5px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .audio-buttons button:hover {
+            background-color: #963b52;
+        }
+
+
+        /* Basic page setup */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #fff5f5;
+            color: #3d2b2b;
+        }
+
+        /* Main container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 25px;
+        }
+
+        /* Opening section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            margin-bottom: 15px;
+            color: #b84c65;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Apology section */
+        .apology {
+            background-color: white;
+            padding: 40px;
+            margin: 40px 0;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .apology h2 {
+            color: #b84c65;
+            text-align: center;
+        }
+
+        .apology p {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        /* Memories section */
+        .memories {
+            text-align: center;
+            margin-top: 70px;
+        }
+
+        .memories h2 {
+            color: #b84c65;
+            font-size: 32px;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .memory {
+            background-color: white;
+            padding: 12px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .memory img {
+            width: 100%;
+            /* height: 300px;  */
+            object-fit: fill;
+            border-radius: 7px;
+        }
+
+        .memory p {
+            margin: 15px 5px 8px;
+            font-size: 15px;
+            color: #6b5050;
+        }
+
+        /* Closing */
+        .closing {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .closing h2 {
+            color: #b84c65;
+            font-size: 32px;
+        }
+
+        .closing p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        /* Mobile layout */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+            .apology {
+                padding: 25px;
+            }
+        }
+    </style>
+
+    <script>
+        function playAudio(id) {
+            const audios = document.querySelectorAll("audio");
+
+            audios.forEach(audio => {
+                if (audio.id !== id) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                }
+            });
+
+            const selectedAudio = document.getElementById(id);
+            selectedAudio.play();
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Opening -->
+        <section class="hero">
+            <h1>I'm Sorry.</h1>
+
+            <p>
+                I made this little page because I fucked up, there are some screenshots of goofy things I decided to take.
+            </p>
+        </section>
+
+
+        <!-- Apology -->
+        <section class="apology">
+
+            <h2>Something I Need You To Know</h2>
+
+            <p>
+                I know that I dissapointed you, and I'm genuinely sorry.
+                I don't want to make excuses for what happened.
+            </p>
+
+            <p>
+                You mean a lot to me, you know it.
+                Unfortunately I am a dumb bimbo that forgets the most basic things. And also doesnt save anything. So
+                there will be a lot of discord screenshots because thats the best I can do.
+            </p>
+
+            <p>
+                I'm not expecting this page to fix everything.
+            </p>
+
+        </section>
+
+
+        <!-- Memories -->
+        <section class="memories">
+
+            <h2>THE FIRST MESSAGES! (we have access to)</h2>
+            <p>as you know we had an incident over something that doesnt need to be mentioned so thats what we have for
+                now</p>
+
+            <div class="gallery">
+
+                <div class="memory">
+                    <img src="images/FirstAlt.png" alt="One of our favorite memories">
+                    <p>This was technically our first message on my main account!</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/FirstMain.png" alt="A special memory">
+                    <p>We basically only talk here so worth showing!</p>
+                </div>
+
+                <!-- I tried looking for things on my old acc but I can find anything. its a shame. I wish we had it saved -->
+                <!-- <div class="memory">
+                    <img src="images/memory3.jpg">
+                    <p>A moment I'll always remember.</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/memory4.jpg">
+                    <p>I'm grateful we got to experience this together.</p>
+                </div> -->
+
+            </div>
+            <p>I tried looking for things on my old acc but I can find anything. its a shame. I wish we had it saved</p>
+
+        </section>
+
+        <section class="memories">
+
+            <h2>Gaming!</h2>
+
+            <div class="gallery">
+
+                <div class="memory">
+                    <img src="images/Terraria.png">
+                    <p>the problem of you making things so good is that it makes it seem that I like them because they
+                        are good. but the real reason is because you made them.</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/Blazblue.png">
+                    <p>This is the first time you won against me on blazblue.</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/Twink.png">
+                    <p>I am still the best twinker.</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/Thirdstrike.png">
+                    <p>We should play more third strike btw, seeing the replay made me remember that the game is fun, I wonder how the "koko-fundamentals" will change your playstyle</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/Deltarune.png">
+                    <p>I remember when you marathoned deltaruned. we did like 3 10hour calls in a row. Kai actually got jealous of you a bit when we did that, understandable. thank you for streaming all of it for me</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/deadlock.jpg">
+                    <p>I will be honest, I dont have a good image to represent us playing deadlock, but I want to thank you for playing it with me</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="memories">
+
+            <h2>Drawings!</h2>
+            <p>Its my gallery so I am picking my favorites.</p>
+
+            <div class="gallery">
+
+                <div class="memory">
+                    <img src="images/FirstDrawing.png">
+                    <p>I dont think this is the first drawing you sent me. nor was it the most memorable. but I think
+                        its worth it</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/fav1.jpg">
+                     <p>Just liked this one</p>
+                </div>
+
+                <div class="memory">
+                    <img src="images/CassAndKai.png">
+                    <p>lowkey I started crying looking at this drawing. you put a flower on my head. You are the best.
+                        thank you for being my friend.</p>
+                </div>
+
+<div class="memory">
+    <img src="images/MewMew.jpg">
+
+    <div class="audio-buttons">
+        <button onclick="playAudio('mewmew')">click here. WARNING THIS MIGHT BE LOUD</button>
+    </div>
+
+    <audio id="mewmew">
+        <source src="images/MewMewSong.mp3" type="audio/mpeg">
+    </audio>
+</div>
+
+                <div class="memory">
+                    <img src="images/Prop.png">
+                    <p>Believe it or not. this drawing stuck with me. Its how I think you look like while talking</p>
+                </div>
+                <div class="memory">
+                    <img src="images/Slimes.jpg">
+                    <p>Another drawing that stuck with me, I loved the expressions so much</p>
+                </div>
+
+                <!-- <div class="memory">
+                    <img src="images/memory4.jpg">
+                    <p>I'm grateful we got to experience this together.</p>
+                </div> --> 
+
+            </div>
+
+        </section>
+
+
+
+        <!-- Closing -->
+        <section class="closing">
+
+            <h2>Thank You for reaching the end, I could've added so many more things but Its getting late and I need to make food</h2>
+
+            <p>
+                I really want this to just be a moment on our friendship where you can point to and say "Cass you are a stupid forgetfull bimbo, You forgot the birthday of your best friend you stupid fish" and not a moment of we growing apart from each other. you are really really important to me. losing you because of this stupid mistake would be my nightmare. I love you twin.
+            </p>
+
+        </section>
+
+    </div>
+
+</body>
+
+</html>
